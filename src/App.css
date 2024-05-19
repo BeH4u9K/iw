@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: block;
+}
+
+.body {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .App-logo {
@@ -36,3 +43,35 @@
     transform: rotate(360deg);
   }
 }
+.Clisent{
+  background-color: rgb(49, 124, 189);
+}
+/* 
+.form_login{
+
+background-color: #282c34;
+width: 300px;
+height: 200px;
+justify-content: center;
+  text-align: center;
+  align-self: center;
+  display: al;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone .password{
+  width: 200px;
+  height: 25px;
+
+}
+.password{
+  width: 200px;
+  height: 25px;
+  margin-top: 0px
+}
+
+.handleSubmit{
+
+margin-top: 10px
+} */
