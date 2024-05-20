@@ -29,7 +29,9 @@ const Client = () => {
     return (
         <div className="App">
             <div className='form_login'>
+                <div className='input_login'>
                 <input
+                    autocomplete="off"
                     className='phone'
                     placeholder="Phone"
                     type="tel"
@@ -37,14 +39,16 @@ const Client = () => {
                     onChange={(e) => setPhone(e.target.value)}
                 />
                 <input
+                    autocomplete="off"
                     className='password'
                     placeholder="Password"
                     type="tel"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
+                </div>
                 <button className='handleSubmit' onClick={handleSubmit}>send</button>
-                <p>{error}</p>
+                <p className='error'>{error}</p> 
             </div>
 
         </div>

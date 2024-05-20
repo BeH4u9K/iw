@@ -7,6 +7,7 @@
   justify-content: center;
   text-align: center;
   margin-top: 20px;
+
 }
 
 .App-logo {
@@ -39,39 +40,83 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.Clisent{
+
+.Clisent {
   background-color: rgb(49, 124, 189);
 }
-/* 
-.form_login{
 
-background-color: #282c34;
-width: 300px;
-height: 200px;
-justify-content: center;
+.form_login {
+  background-color: #282c34;
+  width: 300px;
+  height: 400px;
+  display:inline-block;
+  justify-content: center;
   text-align: center;
   align-self: center;
-  display: al;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 80px;
+  border-radius: 40px;
 }
 
-.phone .password{
+.input_login {
+  height: 80px;
+  margin-top: 20px;
+  display:block;
+}
+
+.phone {
   width: 200px;
   height: 25px;
-
+  margin-top: 10px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #C5CFD0;
 }
-.password{
+
+.password {
   width: 200px;
   height: 25px;
-  margin-top: 0px
+  margin-top: 2px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #C5CFD0;
 }
 
-.handleSubmit{
+.handleSubmit {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: #C5CFD0;
+  border: #282c34;
+  border-radius: 50px;
+}
 
-margin-top: 10px
-} */
+.error{
+color: #C5CFD0;
+}
+
+.form_movie{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.App_movie{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.movie{
+  background-color: #282c34;
+  width: 300px;
+  height: 400px;
+  color: #C5CFD0;
+border-radius: 50px;
+}

@@ -18,13 +18,15 @@ const Movie = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Movies</h1>
-            <ul style={{ listStyleType: 'none', padding: 0 }}>
-                {movies.map((movie, index) => (
-                    <li key={index}>{movie}</li>
-                ))}
-            </ul>
+        <div className="App_movie">
+            <div className='movie'>
+                <h1>Movies</h1>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                    {movies.map((movie, index) => (
+                        <li key={index}>{movie}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 };
