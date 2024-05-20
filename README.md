@@ -21,3 +21,7 @@ Express.js
 - Node.js Express сервер
 - Содержит эндпоинт /login
 - Содержит эндпоинт /movies
+
+админ: admin,admin
+пароль: 3#aAgg
+телефон: +79788415854
