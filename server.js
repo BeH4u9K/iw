@@ -11,8 +11,8 @@ const usersphone = [];
 const userspassword = [];
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
-app.post('/api/login', (req, res) => {
 
+app.post('/api/login', (req, res) => {
     const passwordStrength = /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/;
     const phoneRegex = /^\+\d{11}$/;
     const { phone, password } = req.body;
@@ -22,18 +22,19 @@ app.post('/api/login', (req, res) => {
         responsePhone: phoneRegex.test(phone)
     };
 
-    if(phone==="admin"&&password==="admin"){
-        return res.json({responseAdmin: true})
+    if (phone === "admin" && password === "admin") {
+        return res.json({ responseAdmin: true });
     }
 
-    usersphone.push(phone)
-    userspassword.push(password)
-    console.log(
-        'телефон', usersphone,
-        'пароль', userspassword
-    )
+    usersphone.push(phone);
+    userspassword.push(password);
+    console.log('телефон', usersphone, 'пароль', userspassword);
 
     res.json(response);
+});
+
+app.get('/api/admin', (req, res) => {
+    res.json({ usersphone,userspassword });
 });
 
 app.get('/api/movie', (req, res) => {

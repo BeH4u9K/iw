@@ -121,3 +121,25 @@ color: #C5CFD0;
   color: #C5CFD0;
 border-radius: 50px;
 }
+
+
+.App_Admin{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Admin_info{
+  background-color: #282c34;
+  width: 300px;
+  color: #C5CFD0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.text_info{
+  background-color: #61dafb;
+  width: 250px;
+}
